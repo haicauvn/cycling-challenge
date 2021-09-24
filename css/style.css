@@ -1,0 +1,21 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wraper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.image {
+    border-radius: 3%;
+}
+
+.nav-chart {
+    padding: 20px 0;
+    user-select: none;
+}
+
+#percent-circle {
+    margin: 0 auto;
+}

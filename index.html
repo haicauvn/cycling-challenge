@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/circle.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="icon" href="./images/icon.jpg">
     <title>Cycling Challenge</title>
     <!-- Font Roboto Gooogle -->
@@ -15,27 +16,35 @@
 </head>
 
 <body>
-    <div class="wraper">
-        <img src="./images/panner.jpg" width="100%">
-        <div class="nav-info">
-            <p>Start: <span class="start-text"></span></p>
-            <p>Challenge: <span class="challenge-text"></span></p>
-            <p>Passed: <span class="passed-text"></span></p>
-        </div>
-        <!-- Pure CSS Percentage Circle: https://www.codeply.com/go/siNKzcCRcs -->
-        <div class="nav-chart">
-            <div id="percent-circle" class="c100 green">
-                <span unselectable="on" onselectstart="return false;" onmousedown="return false;">25%</span>
-                <div class="slice">
-                    <div class="bar"></div>
-                    <div class="fill"></div>
+    <div class="col-12 wraper">
+        <div class="container">
+            <div class="row">
+                <img class="w-100 image" src="./images/panner.jpg">
+            </div>
+            <!-- Pure CSS Percentage Circle: https://www.codeply.com/go/siNKzcCRcs -->
+            <div class="row">
+                <div class="col-6 d-flex justify-content-center nav-chart">
+                    <div id="percent-circle" class="c100 green">
+                        <span unselectable="on" onselectstart="return false;" onmousedown="return false;">25%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-center flex-column  nav-info">
+                    <p>Start: <span class="start-text text-info"></span></p>
+                    <p>Challenge: <span class="challenge-text text-info"></span></p>
+                    <p>Passed: <span class="passed-text text-success"></span></p>
                 </div>
             </div>
+            
         </div>
+        
         <br>
     </div>
-    <script src="./js/main.js">
-    </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -11,7 +11,7 @@ var passedDay = function(startDay) {
 
 // Show start and passed date
 var startTextElement = document.querySelector(".start-text");
-let startDay = new Date(2021,7,31);
+let startDay = new Date(2021,8,24);
 startTextElement.innerText = formatStringDate(startDay);
 
 var passedTextElement = document.querySelector(".passed-text");
